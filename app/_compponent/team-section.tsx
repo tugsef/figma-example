@@ -1,4 +1,4 @@
-import { Button, Label } from "@/components/label";
+import { Label } from "@/components/label";
 import { TeamCard } from "./team-card";
 import { TeamItemList } from "@/assets/TeamCarsItemList";
 import { ButtonVariant } from "@/components/button-variant";
