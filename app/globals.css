@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --dark: #191a23;
+    --green: #B9FF66;
+    --gray: #F3F3F3;
+  }
+}
