@@ -6,7 +6,6 @@ import {
   ServiceCardLogoEmail,
   ServiceCardLogoPay,
   ServiceCardLogoSearch,
-  ServiceCardLogoSocial,
 } from "@/icons/service-card-logo";
 
 export const ServiceCard = () => {
