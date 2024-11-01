@@ -1,8 +1,5 @@
-import { IconButton } from "@/components/icon-button";
 import { Label } from "@/components/label";
-import { Increase } from "@/icons/increase";
-import { OurWorkingCard } from "./our-working-card";
-import { OurWorkingCardItems } from "@/assets/OurWorkingCardItemList";
+import { OurWorkingCardList } from "./our-working-card";
 
 export const OurWorkingSection = () => {
   {
@@ -20,13 +17,7 @@ export const OurWorkingSection = () => {
           <p className="text-balance text-center">
             Step-by-Step Guide to Achieving Your Business Goals
           </p>
-
-          <div className="space-y-5">
-            {
-                OurWorkingCardItems.map((card,index)=><OurWorkingCard key={index} card={card}/>)
-            }
-         
-          </div>
+          <OurWorkingCardList />
         </div>
       </section>
     );

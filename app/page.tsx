@@ -9,6 +9,7 @@ import { TeamSection } from "./_compponent/team-section";
 import { TestimonialsSection } from "./_compponent/testimonials-section";
 import { ContactSection } from "./_compponent/contact-section";
 import { FooterSection } from "./_compponent/footer-section";
+import { OurWorkingCardList } from "./_compponent/our-working-card";
 
 const Home = () => {
   return (
@@ -27,7 +28,6 @@ const Home = () => {
           <TestimonialsSection />
           <ContactSection />
         </div>
-
         <FooterSection />
       </div>
     </div>

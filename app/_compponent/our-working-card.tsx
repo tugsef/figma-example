@@ -1,25 +1,26 @@
-import { OurWorkingCardItem } from "@/assets/OurWorkingCardItemList";
-import { IconButton } from "@/components/icon-button";
-import { Increase } from "@/icons/increase";
+import { OurWorkingCardItems } from "@/assets/OurWorkingCardItemList";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
-
-
-type OurWorkingCardProps = {
-  card: OurWorkingCardItem;
-};
-
-export const OurWorkingCard = ({ card }: OurWorkingCardProps) => {
+export const OurWorkingCardList = () => {
   return (
-    <article className="p-8 border border-dark border-b-4 rounded-[45px] bg-gray">
-      <div className="flex items-center gap-8 ">
-        <h1 className="text-2xl font-medium">{card.number}</h1>
-        <p className="text-sm  font-medium text-balance w-full">
-          {card.content}
-        </p>
-        <IconButton>
-          <Increase className="size-8" />
-        </IconButton>
-      </div>
-    </article>
+    <Accordion type="single" collapsible className="w-full space-y-5">
+      {OurWorkingCardItems.map((card) => (
+        <AccordionItem value={card.number}>
+          <AccordionTrigger>
+            {" "}
+            <h1 className="text-2xl font-medium">{card.number}</h1>
+            <p className="text-sm  font-medium text-balance w-full text-left">
+              {card.content}
+            </p>
+          </AccordionTrigger>
+          <AccordionContent>{card.content}</AccordionContent>
+        </AccordionItem>
+      ))}
+    </Accordion>
   );
 };
