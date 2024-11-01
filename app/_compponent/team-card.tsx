@@ -1,6 +1,6 @@
 import { TeamItem } from "@/assets/TeamCarsItemList";
 import { Linkedin } from "@/icons/linkedin-logo";
-import { TeamJohn } from "@/icons/team-card-picture";
+
 
 type TeamCardProps = {
     card: TeamItem;

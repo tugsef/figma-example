@@ -1,6 +1,3 @@
-"use client";
-import { useEffect, useRef } from "react";
-
 type TeamCardLogoProps = {
   className?: string;
   imageSrc:string
