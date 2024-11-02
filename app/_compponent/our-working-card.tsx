@@ -9,8 +9,8 @@ import {
 export const OurWorkingCardList = () => {
   return (
     <Accordion type="single" collapsible className="w-full space-y-5">
-      {OurWorkingCardItems.map((card) => (
-        <AccordionItem value={card.number}>
+      {OurWorkingCardItems.map((card,index) => (
+        <AccordionItem key={index} value={card.number}>
           <AccordionTrigger>
             {" "}
             <h1 className="text-2xl font-medium">{card.number}</h1>

@@ -1,10 +1,10 @@
 import { Label } from "@/components/label";
-import { TestimonialsCard } from "./testimonials-card";
-import { IconButton } from "@/components/icon-button";
-import { Arrow } from "@/icons/arrow";
-import { SelectiveIcon } from "@/icons/selective-icon";
+import EmblaCarousel from "@/components/ui/carousel";
+import { EmblaOptionsType } from "embla-carousel";
 
-
+const OPTIONS: EmblaOptionsType = { loop: true }
+const SLIDE_COUNT = 5
+const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 export const TestimonialsSection = () => {
   return (
     <section>
@@ -17,25 +17,8 @@ export const TestimonialsSection = () => {
             about Our Digital Marketing Services
           </p>
         </div>
-       
-        <div className="bg-dark rounded-[45px] px-8 pt-8 pb-16 space-y-14">
-          <TestimonialsCard />
-         <div className="flex justify-between items-center">
-         <IconButton>
-            <Arrow className="-rotate-[150deg]" circleClass="hidden" arrowClass="fill-white/30" />
-            </IconButton>
-            <div className="flex gap-5">
-                <SelectiveIcon className="fill-green"/>
-                <SelectiveIcon className="fill-white"/>
-                <SelectiveIcon className="fill-white"/>
-                <SelectiveIcon className="fill-white"/>
-                <SelectiveIcon className="fill-white"/>
-            </div>
-            <IconButton>
-            <Arrow className="rotate-[30deg]" circleClass="hidden" arrowClass="fill-white" />
-            </IconButton></div>
-        </div>
-    
+
+        <EmblaCarousel slides={SLIDES} options={OPTIONS} />
       </div>
     </section>
   );

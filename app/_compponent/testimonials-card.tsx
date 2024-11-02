@@ -1,6 +1,6 @@
 export const TestimonialsCard = () => {
   return (
-    <article className="space-y-8">
+    <article className="number space-y-8">
       <div className="px-8 pt-8 pb-14 border border-green rounded-[45px] relative">
         <p className="text-white text-balance">
           "We have been working with Positivus for the past year and have seen a

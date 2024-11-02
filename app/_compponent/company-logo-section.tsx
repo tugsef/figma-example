@@ -1,10 +1,10 @@
 import { Amazon, Dribble, HubSpot, Netflix, Notion, Zoom } from "@/icons/company-logo"
-import { MarqueeDemo } from "./test"
+import { MarqueeCompany } from "./company-animate"
 
 export const CompanyLogoSection = ()=>{
     return <section>
         <div  className="overflow-hidden filter  grayscale">
-        <MarqueeDemo/>
+        <MarqueeCompany/>
         </div>
       
     </section>

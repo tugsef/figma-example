@@ -55,20 +55,19 @@ icon
   );
 };
 
-export function MarqueeDemo() {
-  return (
-    <div className="space-y-10 filter  grayscale relative   w-full  overflow-hidden md:shadow-xl">
-      <Marquee pauseOnHover className="[--duration:20s] space-x-9">
-        {firstRow.map((review,index) => (
-          <ReviewCard key={index} {...review} />
-        ))}
-      </Marquee>
-      <Marquee reverse pauseOnHover className="[--duration:20s] space-x-9">
-        {secondRow.map((review,index) => (
-          <ReviewCard key={index} {...review} />
-        ))}
-      </Marquee>
+export const MarqueeCompany = ()=>{
+    return  <div className="space-y-10 filter  grayscale relative   w-full  overflow-hidden md:shadow-xl">
+    <Marquee pauseOnHover className="[--duration:20s] space-x-9">
+      {firstRow.map((review,index) => (
+        <ReviewCard key={index} {...review} />
+      ))}
+    </Marquee>
+    <Marquee reverse pauseOnHover className="[--duration:20s] space-x-9">
+      {secondRow.map((review,index) => (
+        <ReviewCard key={index} {...review} />
+      ))}
+    </Marquee>
 
-    </div>
-  );
+  </div>
 }
+

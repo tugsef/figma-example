@@ -5,7 +5,7 @@ type TeamCardProps = {
   };
 export const TeamCard = ({card}:TeamCardProps) => {
   return (
-    <article className="py-10 px-9 rounded-[45px] border border-dark border-b-4 space-y-5">
+    <article className="number py-10 px-9 rounded-[45px] border border-dark border-b-4 space-y-5">
       <div className="flex gap-5 relative items-end">
         {card.icon}
 
