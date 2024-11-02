@@ -129,7 +129,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
         >
           {slides.map((index) => (
             <div
-              className="flex-shrink-0 pl-[var(--slide-spacing)] min-w-80"
+              className="flex-shrink-0 pl-[var(--slide-spacing)] min-w-72"
               style={{
                 transform: "translate3d(0, 0, 0)",
                 flexBasis: "var(--slide-size)",
