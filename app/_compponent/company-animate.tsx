@@ -1,4 +1,5 @@
 import Marquee from "@/components/ui/marquee";
+
 import { Amazon, Dribble, HubSpot, Netflix, Notion, Zoom } from "@/icons/company-logo";
 import { cn } from "@/lib/utils";
 import { ReactNode } from "react";
@@ -56,8 +57,11 @@ icon
 };
 
 export const MarqueeCompany = ()=>{
+ 
+
     return  <div className="space-y-10 filter  grayscale relative   w-full  overflow-hidden md:shadow-xl">
     <Marquee pauseOnHover className="[--duration:20s] space-x-9">
+    
       {firstRow.map((review,index) => (
         <ReviewCard key={index} {...review} />
       ))}

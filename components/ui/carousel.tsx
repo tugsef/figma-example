@@ -1,5 +1,5 @@
 "use client";
-import React, { useCallback, useEffect, useRef } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import {
   EmblaCarouselType,
   EmblaEventType,
@@ -15,6 +15,8 @@ import {
   PrevButton,
   usePrevNextButtons,
 } from "./EmblaCarouselArrowButtons";
+import useOnScreen from "@/hooks/useOnScreen";
+import Autoplay from "embla-carousel-autoplay";
 
 const TWEEN_FACTOR_BASE = 0.52;
 
@@ -27,11 +29,42 @@ type PropType = {
 };
 
 const EmblaCarousel: React.FC<PropType> = (props) => {
+ 
+  const ref = useRef<HTMLDivElement>(null);
+  const isVisible = useOnScreen(ref, '-100px'); 
   const { slides, options } = props;
-  const [emblaRef, emblaApi] = useEmblaCarousel(options);
+
   const tweenFactor = useRef(0);
   const tweenNodes = useRef<HTMLElement[]>([]);
 
+  const [emblaRef, emblaApi] = useEmblaCarousel(options, [
+    Autoplay({ playOnInit: false, delay: 3000 })
+  ])
+  const [isPlaying, setIsPlaying] = useState(isVisible)
+
+  const onButtonAutoplayClick = useCallback(
+    (callback: () => void) => {
+      const autoplay = emblaApi?.plugins()?.autoplay
+      if (!autoplay) return
+
+      const resetOrStop =
+        autoplay.options.stopOnInteraction === false
+          ? autoplay.reset
+          : autoplay.stop
+
+      resetOrStop()
+      callback()
+    },
+    [emblaApi]
+  )
+
+  const toggleAutoplay = useCallback(() => {
+    const autoplay = emblaApi?.plugins()?.autoplay
+    if (!autoplay) return
+
+    const playOrStop = autoplay.isPlaying() ? autoplay.stop : autoplay.play
+    playOrStop()
+  }, [emblaApi])
   const { selectedIndex, scrollSnaps, onDotButtonClick } =
     useDotButton(emblaApi);
 
@@ -94,7 +127,11 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
   );
 
   useEffect(() => {
+    const autoplay = emblaApi?.plugins()?.autoplay
+    
+    if (!autoplay) return
     if (!emblaApi) return;
+    setIsPlaying(autoplay.isPlaying())
 
     setTweenNodes(emblaApi);
     setTweenFactor(emblaApi);
@@ -105,20 +142,26 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
       .on("reInit", setTweenFactor)
       .on("reInit", tweenScale)
       .on("scroll", tweenScale)
-      .on("slideFocus", tweenScale);
+      .on("slideFocus", tweenScale)
+      .on('autoplay:play', () => setIsPlaying(true))
+      .on('autoplay:stop', () => setIsPlaying(false))
+      .on('reInit', () => setIsPlaying(autoplay.isPlaying()));
   }, [emblaApi, tweenScale]);
-
+ 
   return (
     <div
+
+    ref={ref}
       className="max-w-3xl mx-auto bg-dark rounded-[45px] px-8 pt-8 pb-16 space-y-14"
       style={
         {
           "--slide-height": "19rem",
           "--slide-spacing": "1rem",
-          "--slide-size": "55%",
+          "--slide-size": "100%",
         } as React.CSSProperties
       }
     >
+ 
       <div className="overflow-hidden" ref={emblaRef}>
         <div
           className="flex"
@@ -129,7 +172,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
         >
           {slides.map((index) => (
             <div
-              className="flex-shrink-0 pl-[var(--slide-spacing)] min-w-72"
+              className={"flex-shrink-0 pl-[var(--slide-spacing)] min-w-0"}
               style={{
                 transform: "translate3d(0, 0, 0)",
                 flexBasis: "var(--slide-size)",
@@ -150,7 +193,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
               <DotButton key={index} onClick={() => onDotButtonClick(index)}>
                 <SelectiveIcon
                   className={"flex ".concat(
-                    index === selectedIndex ? "fill-green" : "fill-white"
+                    index === selectedIndex ? "fill-green block" : "fill-white"
                   )}
                 />
               </DotButton>
