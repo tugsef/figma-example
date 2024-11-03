@@ -33,7 +33,7 @@ export const ServiceCardLogoPay = ({className}:ServiceCardLogoProps)=>{
 }
 
 export const ServiceCardLogoSocial = ({className}:ServiceCardLogoProps)=>{
-    return <svg width={128} height={130} viewBox="0 0 128 130" className={className} xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+    return <svg className={className} xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
   <rect x="0.882812" y="0.470703" width="127.117" height={129} fill="url(#pattern0_344_768)" />
   <defs>
     <pattern id="pattern0_344_768" patternContentUnits="objectBoundingBox" width={1} height={1}>

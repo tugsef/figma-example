@@ -6,6 +6,6 @@ export const CompanyLogoSection = ()=>{
         <div  className="overflow-hidden filter  grayscale">
         <MarqueeCompany/>
         </div>
-      
+      <div id="services"> </div>
     </section>
 }
