@@ -132,7 +132,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
     <div
 
 
-      className="max-w-3xl mx-auto bg-dark rounded-[45px] px-8 pt-8 pb-16 space-y-14 lg:max-w-none"
+      className="max-w-3xl mx-auto bg-dark rounded-[45px] px-8 pt-8 pb-16 space-y-14 lg:max-w-none lg:pt-20 lg:pb-16"
       style={
         {
           "--slide-height": "19rem",

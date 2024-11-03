@@ -13,7 +13,7 @@ import { FooterSection } from "./_compponent/footer-section";
 const Home = () => {
   return (
     <div id="about_us" className="min-h-screen grid grid-cols-1">
-      <div className="space-y-14 lg:space-y-36">
+      <div className="space-y-14 lg:space-y-20">
         <div className="space-y-14">
         <div className="space-y-14 py-8 px-5 lg:px-12 lg:pt-7 pt xl:px-24 xl:pt-14">
           <div className="space-y-9 lg:space-y-16">

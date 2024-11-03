@@ -7,13 +7,13 @@ import { formatString } from "@/utils";
 
 export const FooterSection = () => {
   return (
-    <footer className="bg-dark  px-5 pt-12 lg:bg-transparent lg:px-12 lg:pt-7  xl:px-24 xl:pt-14">
+    <footer className="bg-dark  px-5 pt-12 lg:bg-transparent lg:px-12  xl:px-24 ">
       <div className="text-white flex justify-center flex-col items-center gap-9 lg:bg-dark  lg:rounded-t-[45px] lg:py-12 lg:px-16 lg:gap-16">
         <div className="flex gap-9 flex-col lg:flex-row lg:justify-between lg:w-full items-center">
           <Logo className="fill-white w-36" />
           <div className="flex flex-col lg:flex-row lg:gap-10 gap-4 text-center">
           {NavList.map((item) => (
-          <Link className="border-b" key={item.id} href={`#${formatString(item.name)}`}>
+          <Link className="lg:border-b" key={item.id} href={`#${formatString(item.name)}`}>
             {item.name}
           </Link>
         ))}
