@@ -26,7 +26,7 @@ export const FooterSection = () => {
         </div>
         <div className="lg:flex gap-9 lg:space-y-0 flex-col justify-center space-y-9 text-center lg:flex-row lg:justify-between lg:w-full">
           <div className="lg:flex gap-9 lg:space-y-0 flex-col justify-center space-y-9 text-center">
-          <h3 className="text-black font-bold px-2 bg-green rounded-lg max-w-28 mx-auto">
+          <h3 className="text-black font-bold px-2 bg-green rounded-lg max-w-28 mx-auto lg:mx-0">
             Contact us:
           </h3>
 
