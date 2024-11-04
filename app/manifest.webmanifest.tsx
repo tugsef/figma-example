@@ -16,6 +16,15 @@ export default function manifest() {
             "type": "image/png"
           }
         ],
+        "categories": [
+            "education",
+            "figma",
+            "software",
+            "nextjs",
+            "react",
+            "ui",
+            "ux"
+          ],
         "orientation": "any",
         "display": "standalone",
         "dir": "auto",
