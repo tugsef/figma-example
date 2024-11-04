@@ -15,7 +15,7 @@ export const ProposalCard = () => {
       <ButtonVariant variant="dark" className="w-full lg:w-auto">
         Get your proposal
       </ButtonVariant>
-      <Frame className="lg:absolute hidden lg:block -top-14 right-0 fill-transparent"/>
+      <Frame className="lg:absolute hidden lg:block -top-14 right-0 fill-transparent" />
     </article>
   );
 };

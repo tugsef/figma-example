@@ -3,9 +3,7 @@ type IllustrationIconProps = {
 } & React.SVGProps<SVGAElement>;
 export const Illustration = ({ className }: IllustrationIconProps) => {
   return (
-    <svg
-className={className}      xmlns="http://www.w3.org/2000/svg"
-    >
+    <svg className={className} xmlns="http://www.w3.org/2000/svg">
       <mask
         id="mask0_341_618"
         style={{ maskType: "alpha" }}

@@ -54,7 +54,7 @@ export const ContactForm = () => {
           Send Message
         </ButtonVariant>
       </div>
-      <Illustration className="fill-transparent hidden lg:block "/>
+      <Illustration className="fill-transparent hidden lg:block " />
     </div>
   );
 };

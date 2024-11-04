@@ -21,7 +21,6 @@ export const ServicesSection = () => {
         <ProposalCard />
       </div>
       <div id="use_cases"> </div>
-
     </section>
   );
 };

@@ -1,10 +1,9 @@
 type TeamCardLogoProps = {
   className?: string;
-  imageSrc:string
+  imageSrc: string;
 } & React.SVGProps<SVGAElement>;
 
-export const TeamPhoto = ({ className,imageSrc }: TeamCardLogoProps) => {
-
+export const TeamPhoto = ({ className, imageSrc }: TeamCardLogoProps) => {
   return (
     <svg
       width={106}
@@ -61,12 +60,13 @@ export const TeamPhoto = ({ className,imageSrc }: TeamCardLogoProps) => {
             transform="matrix(0.000376828 0 0 0.000250438 -0.00155763 0)"
           />
         </pattern>
-        <image id="image0_346_937" xlinkHref={imageSrc} width={2731} height={4096} />
-
+        <image
+          id="image0_346_937"
+          xlinkHref={imageSrc}
+          width={2731}
+          height={4096}
+        />
       </defs>
     </svg>
   );
 };
-
-
-

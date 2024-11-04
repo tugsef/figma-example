@@ -9,7 +9,7 @@ import {
 export const OurWorkingCardList = () => {
   return (
     <Accordion type="single" collapsible className="w-full space-y-5">
-      {OurWorkingCardItems.map((card,index) => (
+      {OurWorkingCardItems.map((card, index) => (
         <AccordionItem key={index} value={card.number}>
           <AccordionTrigger>
             {" "}

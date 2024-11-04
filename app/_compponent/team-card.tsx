@@ -1,9 +1,9 @@
 import { TeamItem } from "@/assets/TeamCarsItemList";
 import { Linkedin } from "@/icons/linkedin-logo";
 type TeamCardProps = {
-    card: TeamItem;
-  };
-export const TeamCard = ({card}:TeamCardProps) => {
+  card: TeamItem;
+};
+export const TeamCard = ({ card }: TeamCardProps) => {
   return (
     <article className="number py-10 px-9 rounded-[45px] border border-dark border-b-4 space-y-5">
       <div className="flex gap-5 relative items-end">
@@ -18,9 +18,7 @@ export const TeamCard = ({card}:TeamCardProps) => {
       </div>
 
       <div className="border border-dark" />
-      <p className="text-balance">
-        {card.content}
-      </p>
+      <p className="text-balance">{card.content}</p>
     </article>
   );
 };

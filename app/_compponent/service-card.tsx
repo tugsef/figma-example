@@ -45,7 +45,6 @@ export const ServiceCard = () => {
           <IconButton className="lg:flex gap-3 items-center">
             <Arrow arrowClass="fill-green" circleClass="fill-black" />
             <span className="hidden lg:block text-sm">Learn more</span>
-
           </IconButton>
           <ServiceCardLogoPay className="lg:size-52 lg:absolute  lg:top-1/2 lg:right-12 lg:transform  lg:-translate-y-1/2" />
         </div>
@@ -64,8 +63,9 @@ export const ServiceCard = () => {
         <div className="flex items-end justify-between">
           <IconButton className="lg:flex gap-3 items-center">
             <Arrow arrowClass="fill-black" circleClass="fill-white" />
-            <span className="hidden lg:block text-sm text-white">Learn more</span>
-
+            <span className="hidden lg:block text-sm text-white">
+              Learn more
+            </span>
           </IconButton>
           <ServiceCardLogoPay className="lg:size-52 lg:absolute  lg:top-1/2 lg:right-12 lg:transform  lg:-translate-y-1/2" />
         </div>
@@ -85,7 +85,6 @@ export const ServiceCard = () => {
           <IconButton className="lg:flex gap-3 items-center">
             <Arrow arrowClass="fill-green" circleClass="fill-black" />
             <span className="hidden lg:block text-sm">Learn more</span>
-
           </IconButton>
           <ServiceCardLogoEmail className="lg:size-52 lg:absolute  lg:top-1/2 lg:right-12 lg:transform  lg:-translate-y-1/2" />
         </div>
@@ -105,7 +104,6 @@ export const ServiceCard = () => {
           <IconButton className="lg:flex gap-3 items-center">
             <Arrow arrowClass="fill-green" circleClass="fill-black" />
             <span className="hidden lg:block text-sm">Learn more</span>
-
           </IconButton>
           <ServiceCardLogoContent className="lg:size-52 lg:absolute  lg:top-1/2 lg:right-12 lg:transform  lg:-translate-y-1/2" />
         </div>
@@ -124,8 +122,9 @@ export const ServiceCard = () => {
         <div className="flex items-end justify-between">
           <IconButton className="lg:flex gap-3 items-center">
             <Arrow arrowClass="fill-black" circleClass="fill-white" />
-            <span className="hidden lg:block text-sm text-white">Learn more</span>
-
+            <span className="hidden lg:block text-sm text-white">
+              Learn more
+            </span>
           </IconButton>
           <ServiceCardLogoAnalytics className="lg:size-52 lg:absolute  lg:top-1/2 lg:right-12 lg:transform  lg:-translate-y-1/2" />
         </div>

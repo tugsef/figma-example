@@ -1,0 +1,12 @@
+<svg width="350" height="350" viewBox="0 0 350 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="194.477" y1="249.472" x2="186.521" y2="219.784" stroke="#282424" stroke-width="20"/>
+<line x1="163.392" y1="133.574" x2="154.289" y2="99.6019" stroke="#282424" stroke-width="20"/>
+<circle cx="175" cy="175" r="39" stroke="#282424" stroke-width="22"/>
+<circle cx="175" cy="175" r="84" stroke="#282424" stroke-width="22"/>
+<path d="M293 175C293 240.802 240.09 294 175 294C109.91 294 57 240.802 57 175C57 109.198 109.91 56 175 56C240.09 56 293 109.198 293 175Z" stroke="#282424" stroke-width="22"/>
+<line x1="215.811" y1="327.466" x2="208.341" y2="299.588" stroke="#282424" stroke-width="20"/>
+<line x1="327.056" y1="138.256" x2="297.659" y2="143.44" stroke="#282424" stroke-width="20"/>
+<line x1="52.6945" y1="192.848" x2="18.7365" y2="198.836" stroke="#282424" stroke-width="20"/>
+<circle cx="175" cy="175" r="164" stroke="#282424" stroke-width="22"/>
+<path d="M139 50.5L133.5 27.5C140.7 24.7 148.5 24 151.5 24L157 46C148.6 46.4 141.5 49.1667 139 50.5Z" fill="#282424" stroke="#282424"/>
+</svg>
