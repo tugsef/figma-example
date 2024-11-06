@@ -1,4 +1,11 @@
+
 <p align="right">
+<a href="https://www.sefademirtas.com">
+<img src="https://img.shields.io/badge/portfolio-sefademirtas-green"/>
+</a>
+<a href="https://www.focusspark.tech">
+<img src="https://img.shields.io/badge/blog-focusspark-red"/>
+</a>
 <a href="mailto:sefa.demirtas91@gmail.com">      <img alt="Email" src="https://img.shields.io/badge/Email-12100E?logo=maildotru&logoColor=white"/>
    </a>
    <a href="https://linkedin.com/in/sefa-demirtas">
@@ -82,4 +89,11 @@ This static site can be deployed on any hosting service that supports Next.js, s
 
 This project is open source and available under the MIT License.
 
- 
+## Desktop
+
+![](/docs/desktop.png)
+
+## Mobile
+
+![Mobil](/docs/mobil.png)
+

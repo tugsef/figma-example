@@ -24,7 +24,7 @@ export const HeroSection = () => {
           </ButtonVariant>
         </div>
       </div>
-      <Hero className="hidden lg:block max-w-screen-sm" />
+      <Hero className="hidden lg:block h-full w-full lg:max-w-2xl" />
     </section>
   );
 };
