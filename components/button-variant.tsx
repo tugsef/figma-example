@@ -4,8 +4,8 @@ import { cn } from "@/lib/utils";
 const buttonVariants = cva("rounded-2xl px-9 py-5 ", {
   variants: {
     variant: {
-      dark: "bg-dark text-white",
-      transparent: "border-dark border bg-transparent text-black",
+      dark: "bg-dark text-white border border-dark  shadow-xs transition-all duration-500 hover:bg-green hover:bg-transparent hover:text-black",
+      transparent: "border-dark border bg-transparent text-black shadow-xs transition-all duration-500 hover:bg-green hover:border-green",
       green: 'bg-green text-black',
       yellow: 'bg-yellow text-black'
     },
@@ -27,7 +27,7 @@ export const ButtonVariant = ({
   variant,
   ...props
 }: ButtonVariantProps) => {
-return  <button {...props} className={cn(buttonVariants({ variant, className }))}>
+return  <button {...props} className={cn("border-opacity-0",buttonVariants({ variant, className }))}>
     {children}
   </button>;
 };

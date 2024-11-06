@@ -1,11 +1,13 @@
 import { TeamItem } from "@/assets/TeamCarsItemList";
 import { Linkedin } from "@/icons/linkedin-logo";
+import { cn } from "@/lib/utils";
 type TeamCardProps = {
   card: TeamItem;
+  className?:string
 };
-export const TeamCard = ({ card }: TeamCardProps) => {
+export const TeamCard = ({ card,className }: TeamCardProps) => {
   return (
-    <article className="number py-10 px-9 rounded-[45px] border border-dark border-b-4 space-y-5">
+    <article className= {cn("number py-10 px-9 rounded-[45px] border border-dark border-b-4 space-y-5",className)}>
       <div className="flex gap-5 relative items-end">
         {card.icon}
 

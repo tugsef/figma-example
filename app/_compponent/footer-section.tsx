@@ -23,9 +23,18 @@ export const FooterSection = () => {
             ))}
           </div>
           <div className="space-x-5 hidden lg:flex">
-            <Linkedin className="inline-block size-8 " />
-            <Facebook className="inline-block size-8" />
-            <X className="inline-block size-8" />
+            <a href="">
+              <Linkedin className="inline-block size-8 transition ease-in-out delay-150 hover:fill-green  hover:-translate-y-1 hover:scale-110  duration-300 fill-white " />
+            </a>
+            <a href="">
+              <Facebook className="inline-block size-8 transition ease-in-out delay-150 hover:fill-green  hover:-translate-y-1 hover:scale-110  duration-300 fill-white" />
+            </a>
+            <a
+              href="
+            "
+            >
+              <X className="inline-block size-8 transition ease-in-out delay-150 hover:fill-green  hover:-translate-y-1 hover:scale-110  duration-300 fill-white" />
+            </a>
           </div>
         </div>
         <div className="lg:flex gap-9 lg:space-y-0 flex-col justify-center space-y-9 text-center lg:flex-row lg:justify-between lg:w-full">
@@ -48,9 +57,20 @@ export const FooterSection = () => {
         </div>
 
         <div className="space-x-5 lg:hidden">
-          <Linkedin className="inline-block size-8 " />
-          <Facebook className="inline-block size-8" />
-          <X className="inline-block size-8" />
+        <div className="space-x-5 hidden lg:flex">
+            <a href="">
+              <Linkedin className="inline-block size-8 transition ease-in-out delay-150 hover:fill-green  hover:-translate-y-1 hover:scale-110  duration-300 fill-white " />
+            </a>
+            <a href="">
+              <Facebook className="inline-block size-8 transition ease-in-out delay-150 hover:fill-green  hover:-translate-y-1 hover:scale-110  duration-300 fill-white" />
+            </a>
+            <a
+              href="
+            "
+            >
+              <X className="inline-block size-8 transition ease-in-out delay-150 hover:fill-green  hover:-translate-y-1 hover:scale-110  duration-300 fill-white" />
+            </a>
+          </div>
         </div>
         <hr className="h-1 text-white w-full" />
         <div className="space-y-4 text-center lg:text-left lg:w-full lg:space-x-10 lg:space-y-0">

@@ -11,7 +11,7 @@ import {
 export const ServiceCard = () => {
   return (
     <section className="space-y-8 lg:space-y-0 lg:grid lg:grid-cols-2 gap-10 grid-flow-row">
-      <article className="p-12 border border-dark rounded-[45px] border-b-4 bg-gray space-y-7 relative lg:flex flex-col justify-between gap-24">
+      <article className="p-12 border border-dark rounded-[45px] border-b-4 bg-gray space-y-7 relative lg:flex flex-col justify-between gap-24 cursor-pointer lg:hover:animate-tada">
         <div>
           <h2 className="bg-green text-lg lg:text-3xl px-2 font-medium rounded-lg inline-block">
             Search engine
@@ -31,7 +31,7 @@ export const ServiceCard = () => {
         </div>
       </article>
 
-      <article className="p-12 border border-dark rounded-[45px] border-b-4 bg-green space-y-7 relative lg:flex flex-col justify-between gap-24">
+      <article className="p-12 border border-dark rounded-[45px] border-b-4 bg-green space-y-7 relative lg:flex flex-col justify-between gap-24 cursor-pointer lg:hover:animate-tada">
         <div>
           <h2 className="bg-white text-lg lg:text-3xl px-2 font-medium rounded-lg inline-block">
             Pay-per-click
@@ -50,7 +50,7 @@ export const ServiceCard = () => {
         </div>
       </article>
 
-      <article className="p-12 border border-dark rounded-[45px] border-b-4 bg-dark space-y-7 relative lg:flex flex-col justify-between gap-24">
+      <article className="p-12 border border-dark rounded-[45px] border-b-4 bg-dark space-y-7 relative lg:flex flex-col justify-between gap-24 cursor-pointer lg:hover:animate-tada">
         <div>
           <div className="bg-white text-lg lg:text-3xl px-2 font-medium rounded-lg inline-block">
             Social Media
@@ -71,7 +71,7 @@ export const ServiceCard = () => {
         </div>
       </article>
 
-      <article className="p-12 border border-dark rounded-[45px] border-b-4 bg-gray space-y-7 relative lg:flex flex-col justify-between gap-24">
+      <article className="p-12 border border-dark rounded-[45px] border-b-4 bg-gray space-y-7 relative lg:flex flex-col justify-between gap-24 cursor-pointer lg:hover:animate-tada">
         <div>
           <h2 className="bg-green text-lg lg:text-3xl px-2 font-medium rounded-lg inline-block">
             Email
@@ -90,7 +90,7 @@ export const ServiceCard = () => {
         </div>
       </article>
 
-      <article className="p-12 border border-dark rounded-[45px] border-b-4 bg-green space-y-7 relative lg:flex flex-col justify-between gap-24">
+      <article className="p-12 border border-dark rounded-[45px] border-b-4 bg-green space-y-7 relative lg:flex flex-col justify-between gap-24 cursor-pointer lg:hover:animate-tada">
         <div>
           <h2 className="bg-white text-lg lg:text-3xl px-2 font-medium rounded-lg inline-block">
             Content{" "}
@@ -109,7 +109,7 @@ export const ServiceCard = () => {
         </div>
       </article>
 
-      <article className="p-12 border border-dark rounded-[45px] border-b-4 bg-dark space-y-7 relative lg:flex flex-col justify-between gap-24">
+      <article className="p-12 border border-dark rounded-[45px] border-b-4 bg-dark space-y-7 relative lg:flex flex-col justify-between gap-24 cursor-pointer lg:hover:animate-tada">
         <div>
           <div className="bg-white text-lg lg:text-3xl px-2 font-medium rounded-lg inline-block">
             Analytics and{" "}

@@ -1,3 +1,5 @@
+import { cn } from "@/lib/utils";
+
 type ServiceCardLogoProps = {
   className?: string;
 } & React.SVGProps<SVGAElement>;
@@ -8,7 +10,7 @@ export const ServiceCardLogoSearch = ({ className }: ServiceCardLogoProps) => {
       width={165}
       height={117}
       viewBox="0 0 165 117"
-      className={className}
+      className={cn(className)}
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
     >

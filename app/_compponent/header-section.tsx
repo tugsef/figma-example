@@ -11,7 +11,7 @@ export const HeaderSection = () => {
     <nav className="flex justify-between items-center">
       <Logo className="h-6 w-36 lg:h-12 lg:w-56 " />
 
-      <div className="lg:flex md:gap-4  xl:gap-10 hidden justify-center items-center text-lg">
+      <div className="lg:flex lg:gap-4  xl:gap-10 hidden justify-center items-center">
         {NavList.map((item) => (
           <Link
             className="relative group hover:font-bold px-1"
@@ -29,7 +29,7 @@ export const HeaderSection = () => {
           </Link>
         ))}
 
-        <ButtonVariant variant="transparent">Request a quote</ButtonVariant>
+        <ButtonVariant variant="transparent" className="tracking-wider">Request a quote</ButtonVariant>
       </div>
 
       <BurgerMenu className="lg:hidden" />
