@@ -57,8 +57,7 @@ export const FooterSection = () => {
         </div>
 
         <div className="space-x-5 lg:hidden">
-        <div className="space-x-5 hidden lg:flex">
-            <a href="">
+        <a href="">
               <Linkedin className="inline-block size-8 transition ease-in-out delay-150 hover:fill-green  hover:-translate-y-1 hover:scale-110  duration-300 fill-white " />
             </a>
             <a href="">
@@ -70,7 +69,6 @@ export const FooterSection = () => {
             >
               <X className="inline-block size-8 transition ease-in-out delay-150 hover:fill-green  hover:-translate-y-1 hover:scale-110  duration-300 fill-white" />
             </a>
-          </div>
         </div>
         <hr className="h-1 text-white w-full" />
         <div className="space-y-4 text-center lg:text-left lg:w-full lg:space-x-10 lg:space-y-0">
