@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<p align="right">
+<a href="mailto:sefa.demirtas91@gmail.com">      <img alt="Email" src="https://img.shields.io/badge/Email-12100E?logo=maildotru&logoColor=white"/>
+   </a>
+   <a href="https://linkedin.com/in/sefa-demirtas">
+      <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white"/>
+   </a>
+   <a href="https://medium.com/@tugsef">
+      <img alt="Medium" src="https://img.shields.io/badge/Medium-12100E?logo=medium&logoColor=white"/>
+   </a>
+   <a href="https://stackoverflow.com/users/14768745">
+      <img alt="Stack Overflow" src="https://img.shields.io/badge/-Stackoverflow-FE7A16?logo=stack-overflow&logoColor=white"/>
+   </a>
+</p>
+
+# Positivus Landing Page
+
+This project is a Next.js implementation of the open-source design for the Positivus landing page, originally created in Figma. You can view the Figma design [here](<https://www.figma.com/design/EMRYhCCZXMCzTBv2zaNmo8/Positivus-Landing-Page-Design-(Community)?node-id=313-575&node-type=frame&t=GV1cNj2GsqZIHdHG-0>). This site is currently a static web page, reflecting the original design as closely as possible.
+
+## Project Overview
+
+- **Demo Vercel:** https://figma-example-six.vercel.app/
+- **Design**: Created in Figma, open-source community design for Positivus landing page.
+- **Framework**: Developed using [Next.js](https://nextjs.org/).
+- **Current State**: Static web page.
+
+## Features
+
+- Reproduces the Positivus landing page design with precise detail.
+- Implemented as a single static page.
+- Optimized for fast loading and high performance.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+Ensure you have the following installed:
+
+- [Node.js](https://nodejs.org/) (v14+ recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+### Installation
+
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/yourusername/positivus-landing-page.git
+cd positivus-landing-page
+npm install
+# or
+yarn install
+```
+
+### Running Locally
+
+Start the development server:
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 to view the page in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Building for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To create an optimized production build:
 
-## Learn More
+```bash
+npm run build
+npm run start
+# or
+yarn build
+yarn start
+```
 
-To learn more about Next.js, take a look at the following resources:
+### Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This static site can be deployed on any hosting service that supports Next.js, such as [Vercel](www.vercel.com) or Netlify.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### License
 
-## Deploy on Vercel
+This project is open source and available under the MIT License.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+ 
