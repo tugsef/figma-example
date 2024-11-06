@@ -35,8 +35,6 @@ const Home = () => {
 
         <FooterSection />
       </div>
-      <HireMe/>
-
     </div>
   );
 };

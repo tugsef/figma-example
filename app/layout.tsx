@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { siteMetadata } from "@/assets/metadata";
+import { HireMe } from "@/components/hire-me";
 
 const spaceGrotesk = localFont({
   src: './fonts/SpaceGrotesk-VariableFont_wght.ttf',
@@ -55,6 +56,8 @@ export default function RootLayout({
         className={`${spaceGrotesk.className} min-h-screen antialiased`}
       >
         {children}
+        <HireMe/>
+
       </body>
     </html>
   );

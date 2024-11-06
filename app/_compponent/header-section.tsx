@@ -15,8 +15,8 @@ export const HeaderSection = () => {
         {NavList.map((item) => (
           <Link
             className="relative group hover:font-bold px-1"
-            key={item.id}
-            href={`#${formatString(item.name)}`}
+            key={item.name.toLowerCase()}
+            href={item.url}
           >
             {item.name}
             <span

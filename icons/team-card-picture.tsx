@@ -18,7 +18,7 @@ export const TeamPhoto = ({ className, imageSrc }: TeamCardLogoProps) => {
         fill="#231F20"
       />
       <mask
-        id="mask0_346_937"
+        id={`mask0_123`}
         style={{ maskType: "alpha" }}
         maskUnits="userSpaceOnUse"
         x={0}
@@ -31,14 +31,14 @@ export const TeamPhoto = ({ className, imageSrc }: TeamCardLogoProps) => {
           fill="#231F20"
         />
       </mask>
-      <g mask="url(#mask0_346_937)">
+      <g mask={`url(#mask0_123)`}>
         <rect
           x={-5}
           y={-14}
           width={107}
           height={161}
-          fill="url(#pattern0_346_937)"
-        />
+          fill={`url(#pattern0_${imageSrc})`}
+                  />
         <rect
           x={-5}
           y={-14}
@@ -50,21 +50,22 @@ export const TeamPhoto = ({ className, imageSrc }: TeamCardLogoProps) => {
       </g>
       <defs>
         <pattern
-          id="pattern0_346_937"
+          id={`pattern0_${imageSrc}`}
           patternContentUnits="objectBoundingBox"
           width={1}
           height={1}
         >
           <use
-            xlinkHref="#image0_346_937"
+            xlinkHref={`#image0_${imageSrc}`}
             transform="matrix(0.000376828 0 0 0.000250438 -0.00155763 0)"
           />
         </pattern>
         <image
-          id="image0_346_937"
+          id={`image0_${imageSrc}`}
           xlinkHref={imageSrc}
           width={2731}
-          height={4096}
+          height={3500}
+
         />
       </defs>
     </svg>

@@ -1,28 +1,38 @@
 interface NavItem {
     id:number|string
     name:string
+    url:string
 }
 
 
 export const NavList:NavItem[] = [
 {
     id:1,
-    name:"About us"
+    name:"About us",
+    url:"#about"
 },
 {
     id:2,
-    name:"Services"
+    name:"Services",
+    url:"#services"
+
 },
 {
     id:4,
-    name:"Use Cases"
+    name:"Use Cases",
+    url:"#use_cases"
+
 },
 {
     id:5,
-    name:"Pricing"
+    name:"Pricing",
+    url:"/pricing"
+
 },
 {
     id:6,
-    name:"Blog"
+    name:"Blog",
+    url:"/blog"
+
 }
 ]

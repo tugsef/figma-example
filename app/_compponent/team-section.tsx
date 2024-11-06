@@ -20,12 +20,12 @@ export const TeamSection = () => {
         </div>
         <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-10 md:space-y-0">
           {TeamItemList.map((card, index) => (
-            <TeamCard card={card} key={index} className="shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-dark"/>
+            <TeamCard card={card} key={index} className="shadow-none transition-shadow duration-300 cursor-pointer  hover:shadow-lg hover:shadow-dark"/>
           ))}
 
           <article className="number py-10 px-9 rounded-[45px] border border-dark border-b-4 space-y-5 hidden lg:block shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-dark">
             <div className="flex gap-5 relative items-end">
-              <TeamPhoto imageSrc="https://picsum.photos/200/300" />
+              <TeamPhoto imageSrc="/image/image5.png" />
 
               <div className=" space-y-1">
                 <h4 className="font-medium">Brian Williams</h4>
@@ -47,7 +47,7 @@ export const TeamSection = () => {
 
           <article className="number py-10 px-9 rounded-[45px] border border-dark border-b-4 space-y-5 hidden lg:block cursor-pointer hover:shadow-lg hover:shadow-dark">
             <div className="flex gap-5 relative items-end">
-              <TeamPhoto imageSrc="https://picsum.photos/200/300" />
+              <TeamPhoto imageSrc="/image/image6.png"  />
 
               <div className=" space-y-1">
                 <h4 className="font-medium">Sarah Kim</h4>

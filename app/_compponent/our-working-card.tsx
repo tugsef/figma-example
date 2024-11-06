@@ -12,10 +12,9 @@ export const OurWorkingCardList = () => {
       {OurWorkingCardItems.map((card, index) => (
         <AccordionItem key={index} value={card.number}>
           <AccordionTrigger>
-            {" "}
             <h1 className="text-2xl font-medium">{card.number}</h1>
             <p className="text-sm  font-medium text-balance w-full text-left">
-              {card.content}
+              {card.title}
             </p>
           </AccordionTrigger>
           <AccordionContent>{card.content}</AccordionContent>

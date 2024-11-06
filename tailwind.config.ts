@@ -133,7 +133,7 @@ const config: Config = {
         "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
         tada: "tada 1s ease-in-out 0.25s 1",
 		flipBottomRight: 'flip-bottom-right 1s ease 0.25s 1',
-    'spin-slow': 'spin 3s linear infinite', // 3 saniyede bir dönüş yapar
+    'spin-slow': 'spin 5s linear infinite', // 3 saniyede bir dönüş yapar
 
       },
       
