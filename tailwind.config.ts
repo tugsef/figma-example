@@ -84,6 +84,10 @@ const config: Config = {
             transform: "translateX(calc(-100% - var(--gap)))",
           },
         },
+        spin: {
+          from: { transform: 'rotate(0deg)' },
+          to: { transform: 'rotate(360deg)' },
+        },
         "marquee-vertical": {
           from: {
             transform: "translateY(0)",
@@ -121,7 +125,7 @@ const config: Config = {
 			},
 		  },
       },
-
+  
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
@@ -129,8 +133,10 @@ const config: Config = {
         "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
         tada: "tada 1s ease-in-out 0.25s 1",
 		flipBottomRight: 'flip-bottom-right 1s ease 0.25s 1',
+    'spin-slow': 'spin 3s linear infinite', // 3 saniyede bir dönüş yapar
 
       },
+      
     },
   },
   plugins: [require("tailwindcss-animate")],

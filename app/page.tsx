@@ -9,10 +9,11 @@ import { TeamSection } from "./_compponent/team-section";
 import { TestimonialsSection } from "./_compponent/testimonials-section";
 import { ContactSection } from "./_compponent/contact-section";
 import { FooterSection } from "./_compponent/footer-section";
+import { HireMe } from "@/components/hire-me";
 
 const Home = () => {
   return (
-    <div id="about_us" className="min-h-screen grid grid-cols-1">
+    <div id="about_us" className="min-h-screen grid grid-cols-1 relative">
       <div className="space-y-14 lg:space-y-20">
         <div className="lg:space-y-14">
           <div className="space-y-14 py-8 px-5 lg:px-12 lg:pt-7 pt xl:px-24 xl:pt-14">
@@ -34,6 +35,8 @@ const Home = () => {
 
         <FooterSection />
       </div>
+      <HireMe/>
+
     </div>
   );
 };
