@@ -6,7 +6,7 @@ const buttonVariants = cva("rounded-2xl px-9 py-5 ", {
     variant: {
       dark: "bg-dark text-white border border-dark  shadow-xs transition-all duration-500 hover:bg-green hover:bg-transparent hover:text-black",
       transparent: "border-dark border bg-transparent text-black shadow-xs transition-all duration-500 hover:bg-green hover:border-green",
-      green: 'bg-green text-black',
+      green: 'bg-green text-black transition ease-in-out delay-150 hover:fill-green  hover:-translate-y-1  duration-300 ',
       yellow: 'bg-yellow text-black'
     },
     defaultVariants: {
