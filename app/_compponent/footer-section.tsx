@@ -7,7 +7,7 @@ import { formatString } from "@/utils";
 
 export const FooterSection = () => {
   return (
-    <footer className="bg-dark  px-5 pt-12 lg:bg-transparent lg:px-12  xl:px-24 ">
+    <footer className="bg-dark  px-5 pt-12 pb-8 lg:bg-transparent lg:px-12  xl:px-24 ">
       <div className="text-white flex justify-center flex-col items-center gap-9 lg:bg-dark  lg:rounded-t-[45px] lg:py-12 lg:px-16 lg:gap-16">
         <div className="flex gap-9 flex-col lg:flex-row lg:justify-between lg:w-full items-center">
           <Logo className="fill-white w-36" />
@@ -75,7 +75,7 @@ export const FooterSection = () => {
           <p className="lg:inline-block">
             © 2023 Positivus. All Rights Reserved.
           </p>
-          <p className="lg:inline-block  border-b">Privacy Policy</p>
+          <p className="lg:inline-block  lg:border-b">Privacy Policy</p>
         </div>
       </div>
     </footer>
