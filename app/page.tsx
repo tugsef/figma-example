@@ -32,7 +32,6 @@ const Home = () => {
             <ContactSection />
           </div>
         </div>
-
         <FooterSection />
       </div>
     </div>

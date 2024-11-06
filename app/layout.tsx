@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { siteMetadata } from "@/assets/metadata";
 import { HireMe } from "@/components/hire-me";
+import Up from "@/components/up";
 
 const spaceGrotesk = localFont({
   src: './fonts/SpaceGrotesk-VariableFont_wght.ttf',
@@ -57,7 +58,7 @@ export default function RootLayout({
       >
         {children}
         <HireMe/>
-
+    <Up/>
       </body>
     </html>
   );
