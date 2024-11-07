@@ -10,6 +10,7 @@ import { TestimonialsSection } from "./_compponent/testimonials-section";
 import { ContactSection } from "./_compponent/contact-section";
 import { FooterSection } from "./_compponent/footer-section";
 import { HireMe } from "@/components/hire-me";
+import MobileToggleMenu from "./_compponent/mobile-toggle-menu";
 
 const Home = () => {
   return (

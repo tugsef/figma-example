@@ -14,9 +14,9 @@ export const FooterSection = () => {
           <div className="flex flex-col lg:flex-row lg:gap-10 gap-4 text-center">
             {NavList.map((item) => (
               <Link
-                className="lg:border-b"
+                className="lg:border-b hover:lg:border-b-green lg:hover:text-green"
                 key={item.id}
-                href={`#${formatString(item.name)}`}
+                href={item.url}
               >
                 {item.name}
               </Link>

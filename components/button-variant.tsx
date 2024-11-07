@@ -1,6 +1,7 @@
 import { type VariantProps, cva } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
+
 const buttonVariants = cva("rounded-2xl px-9 py-5 ", {
   variants: {
     variant: {
@@ -27,7 +28,10 @@ export const ButtonVariant = ({
   variant,
   ...props
 }: ButtonVariantProps) => {
-return  <button {...props} className={cn("border-opacity-0",buttonVariants({ variant, className }))}>
-    {children}
-  </button>;
+
+
+
+ return  <button   {...props} className={cn("border-opacity-0",buttonVariants({ variant, className }))}>
+   {children}
+ </button>;
 };

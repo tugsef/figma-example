@@ -8,8 +8,7 @@ function page() {
       <Link
         href="/"
         className="text-dark/50 font-light  lg:text-xl hover:border-b border-dark"
-      >
-        Home Page
+      >        Home Page
       </Link>
     </div>
   );

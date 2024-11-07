@@ -28,11 +28,11 @@ const Up: React.FC = () => {
         href={"#header"}
         className={`${
           isActive
-            ? "fixed bottom-4 right-4 lg:bottom-8 z-50 lg:right-8"
+            ? "fixed right-8 bottom-4 md:bottom-10   z-50 md:h-20 md:w-20  w-12 h-12 rounded-full bg-green flex justify-center items-center shadow-2xl  hover:shadow-green "
             : "hidden"
         }`}
       >
-        <ArrowDown className="w-10 h-10 lg:w-14 rotate-180 bg-green lg:h-14  rounded-full shadow-2xl text-black dark:shadow-2xl hover:shadow-black" />
+        <ArrowDown className="w-8 h-8 md:w-10 md:h-10  rotate-180    fill-transparent  text-black" />
       </Link>
     </div>
   );

@@ -7,6 +7,7 @@ import {
   ServiceCardLogoPay,
   ServiceCardLogoSearch,
 } from "@/icons/service-card-logo";
+import Link from "next/link";
 
 export const ServiceCard = () => {
   return (
@@ -22,10 +23,10 @@ export const ServiceCard = () => {
           </h2>
         </div>
         <div className="flex items-end justify-between">
-          <IconButton className="lg:flex gap-3 items-center">
+          <Link href="/information" className="lg:flex gap-3 items-center">
             <Arrow arrowClass="fill-green" circleClass="fill-black" />
             <span className="hidden lg:block text-sm">Learn more</span>
-          </IconButton>
+          </Link>
 
           <ServiceCardLogoSearch className="lg:size-52 lg:absolute  lg:top-1/2 lg:right-12 lg:transform  lg:-translate-y-1/2" />
         </div>
@@ -42,10 +43,10 @@ export const ServiceCard = () => {
           </h2>
         </div>
         <div className="flex items-end justify-between">
-          <IconButton className="lg:flex gap-3 items-center">
+          <Link href="/information" className="lg:flex gap-3 items-center">
             <Arrow arrowClass="fill-green" circleClass="fill-black" />
             <span className="hidden lg:block text-sm">Learn more</span>
-          </IconButton>
+          </Link>{" "}
           <ServiceCardLogoPay className="lg:size-52 lg:absolute  lg:top-1/2 lg:right-12 lg:transform  lg:-translate-y-1/2" />
         </div>
       </article>
@@ -61,12 +62,12 @@ export const ServiceCard = () => {
           </div>
         </div>
         <div className="flex items-end justify-between">
-          <IconButton className="lg:flex gap-3 items-center">
+          <Link href="/information" className="lg:flex gap-3 items-center">
             <Arrow arrowClass="fill-black" circleClass="fill-white" />
             <span className="hidden lg:block text-sm text-white">
               Learn more
             </span>
-          </IconButton>
+          </Link>{" "}
           <ServiceCardLogoPay className="lg:size-52 lg:absolute  lg:top-1/2 lg:right-12 lg:transform  lg:-translate-y-1/2" />
         </div>
       </article>
@@ -82,10 +83,10 @@ export const ServiceCard = () => {
           </h2>
         </div>
         <div className="flex items-end justify-between">
-          <IconButton className="lg:flex gap-3 items-center">
+          <Link href="/information" className="lg:flex gap-3 items-center">
             <Arrow arrowClass="fill-green" circleClass="fill-black" />
             <span className="hidden lg:block text-sm">Learn more</span>
-          </IconButton>
+          </Link>
           <ServiceCardLogoEmail className="lg:size-52 lg:absolute  lg:top-1/2 lg:right-12 lg:transform  lg:-translate-y-1/2" />
         </div>
       </article>
@@ -101,10 +102,10 @@ export const ServiceCard = () => {
           </h2>
         </div>
         <div className="flex items-end justify-between">
-          <IconButton className="lg:flex gap-3 items-center">
+          <Link href="/information" className="lg:flex gap-3 items-center">
             <Arrow arrowClass="fill-green" circleClass="fill-black" />
             <span className="hidden lg:block text-sm">Learn more</span>
-          </IconButton>
+          </Link>
           <ServiceCardLogoContent className="lg:size-52 lg:absolute  lg:top-1/2 lg:right-12 lg:transform  lg:-translate-y-1/2" />
         </div>
       </article>
@@ -120,12 +121,12 @@ export const ServiceCard = () => {
           </div>
         </div>
         <div className="flex items-end justify-between">
-          <IconButton className="lg:flex gap-3 items-center">
+          <Link href="/information" className="lg:flex gap-3 items-center">
             <Arrow arrowClass="fill-black" circleClass="fill-white" />
             <span className="hidden lg:block text-sm text-white">
               Learn more
             </span>
-          </IconButton>
+          </Link>
           <ServiceCardLogoAnalytics className="lg:size-52 lg:absolute  lg:top-1/2 lg:right-12 lg:transform  lg:-translate-y-1/2" />
         </div>
       </article>

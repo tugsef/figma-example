@@ -5,6 +5,7 @@ import { Logo } from "@/icons/logo";
 import { cn } from "@/lib/utils";
 import { formatString } from "@/utils";
 import Link from "next/link";
+import MobileToggleMenu from "./mobile-toggle-menu";
 
 export const HeaderSection = () => {
   return (
@@ -29,10 +30,10 @@ export const HeaderSection = () => {
           </Link>
         ))}
 
-        <ButtonVariant variant="transparent" className="tracking-wider">Request a quote</ButtonVariant>
+        <ButtonVariant  variant="transparent" className="tracking-wider">Request a quote</ButtonVariant>
       </div>
 
-      <BurgerMenu className="lg:hidden" />
+     <MobileToggleMenu/>
     </nav>
   );
 };

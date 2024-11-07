@@ -6,8 +6,8 @@ import { HireMe } from "@/components/hire-me";
 import Up from "@/components/up";
 
 const spaceGrotesk = localFont({
-  src: './fonts/SpaceGrotesk-VariableFont_wght.ttf',
-  weight: '100 900'
+  src: "./fonts/SpaceGrotesk-VariableFont_wght.ttf",
+  weight: "100 900",
 });
 
 export const metadata: Metadata = {
@@ -53,12 +53,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${spaceGrotesk.className} min-h-screen antialiased`}
-      >
+      <body className={`${spaceGrotesk.className} min-h-screen antialiased`}>
         {children}
-        <HireMe/>
-    <Up/>
+        <HireMe />
+        <Up />
       </body>
     </html>
   );

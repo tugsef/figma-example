@@ -1,5 +1,4 @@
 import { ButtonVariant } from "@/components/button-variant";
-import { Button } from "@/components/label";
 import { Hero } from "@/icons/hero";
 
 export const HeroSection = () => {
@@ -19,7 +18,7 @@ export const HeroSection = () => {
             </p>
           </div>
 
-          <ButtonVariant variant="dark" className="w-full md:w-auto">
+          <ButtonVariant  variant="dark" className="w-full md:w-auto">
             Book a consultation
           </ButtonVariant>
         </div>
