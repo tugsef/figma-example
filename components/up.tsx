@@ -28,7 +28,7 @@ const Up: React.FC = () => {
         href={"#header"}
         className={`${
           isActive
-            ? "fixed right-8 bottom-4 md:bottom-10   z-50 md:h-20 md:w-20  w-12 h-12 rounded-full bg-green flex justify-center items-center shadow-2xl  hover:shadow-green "
+            ? "fixed right-4 md:right-10 bottom-4 md:bottom-12   z-50 md:h-20 md:w-20  w-12 h-12 rounded-full bg-green flex justify-center items-center shadow-2xl  hover:shadow-green "
             : "hidden"
         }`}
       >

@@ -13,8 +13,7 @@ export const HireMe = () => {
             href="mailto:sefa.demirtas91@gmail.com"
             className="flex items-center justify-center absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] shadow-md border 
             bg-green rounded-full text-dark w-12 h-12 font-semibold   text-xs
-           md:w-20 md:h-20 md:text-[10px]
-            "  
+           md:w-20 md:h-20 md:text-[10px]"  
           >
          Hire Me
           </Link>
