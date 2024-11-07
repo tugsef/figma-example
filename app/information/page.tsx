@@ -1,5 +1,5 @@
 import HyperText from "@/components/ui/hyper-text";
-import { Link } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 
 function page() {
